@@ -1,3 +1,17 @@
+--Inserting into 'genres' table
+INSERT INTO genres (name) VALUES ('Ficção');
+INSERT INTO genres (name) VALUES ('Romance');
+INSERT INTO genres (name) VALUES ('Fantasia');
+INSERT INTO genres (name) VALUES ('Aventura');
+INSERT INTO genres (name) VALUES ('Épico');
+INSERT INTO genres (name) VALUES ('Terror');
+INSERT INTO genres (name) VALUES ('Drama');
+INSERT INTO genres (name) VALUES ('Vampiros');
+INSERT INTO genres (name) VALUES ('Ficção Científica');
+INSERT INTO genres (name) VALUES ('Espiritualidade');
+INSERT INTO genres (name) VALUES ('Distopia');
+
+
 --Inserting into 'books' table
 INSERT INTO books (title, author, year_publication, synopsis, description, cover_url) VALUES ('Harry Potter e a Pedra Filosofal', 'J.K. Rowling', 1997, 'O primeiro livro da famosa série de Harry Potter conta a história do jovem bruxo que descobre seu verdadeiro destino ao ingressar na Escola de Magia e Bruxaria de Hogwarts.', 'Harry Potter é um garoto cujos pais, feiticeiros, foram assassinados por um poderosíssimo bruxo quando ele ainda era um bebê. Ele foi levado, então, para a casa dos tios que nada tinham a ver com o sobrenatural. Pelo contrário. Até os 10 anos, Harry foi uma espécie de gata borralheira: maltratado pelos tios, herdava roupas velhas do primo gorducho, tinha óculos remendados e era tratado como um estorvo. No dia de seu aniversário de 11 anos, entretanto, ele parece deslizar por um buraco sem fundo, como o de Alice no país das maravilhas, que o conduz a um mundo mágico. Descobre sua verdadeira história e seu destino: ser um aprendiz de feiticeiro até o dia em que terá que enfrentar a pior força do mal, o homem que assassinou seus pais. O menino de olhos verde, magricela e desengonçado, tão habituado à rejeição, descobre, também, que é um herói no universo dos magos. Potter fica sabendo que é a única pessoa a ter sobrevivido a um ataque do tal bruxo do mal e essa é a causa da marca em forma de raio que ele carrega na testa. Ele não é um garoto qualquer, ele sequer é um feiticeiro qualquer ele é Harry Potter, símbolo de poder, resistência e um líder natural entre os sobrenaturais. A fábula, recheada de fantasmas, paredes que falam, caldeirões, sapos, unicórnios, dragões e gigantes, não é, entretanto, apenas um passatempo.', 'https://firebasestorage.googleapis.com/v0/b/bookshelf-8cf72.appspot.com/o/book_covers%2FAs%20Brumas%20de%20Avalon.jpg?alt=media&token=4dc5328a-22bb-4d39-9f5e-8a67c788f2c9');
 INSERT INTO books (title, author, year_publication, synopsis, description, cover_url) VALUES ('O Senhor dos Anéis', 'J.R.R. Tolkien', 1954, 'Uma trilogia épica que se passa em um mundo fictício chamado Terra-média. A história acompanha Frodo Baggins em sua jornada para destruir um anel poderoso que pode dominar todo o universo.', 'A trilogia épica "O Senhor dos Anéis" se passa na Terra-média, um mundo fictício repleto de raças, criaturas e culturas diversas. A história central gira em torno do jovem hobbit Frodo Baggins, que embarca em uma jornada perigosa para destruir um poderoso Anel do Poder e impedir que caia nas mãos do maligno Sauron. Ao longo da jornada, Frodo se une a uma comunidade diversa de heróis e enfrenta batalhas épicas entre o bem e o mal.', 'https://firebasestorage.googleapis.com/v0/b/bookshelf-8cf72.appspot.com/o/book_covers%2Fsenhor%20dos%20aneis.jpg?alt=media&token=056080cb-2277-497e-b039-06ff2cc0e2dd');
@@ -9,3 +23,31 @@ INSERT INTO books (title, author, year_publication, synopsis, description, cover
 INSERT INTO books (title, author, year_publication, synopsis, description, cover_url) VALUES ('Divergente', 'Veronica Roth', 2011, 'O primeiro livro da trilogia "Divergente" ocorre em uma sociedade distópica dividida em facções. A história segue Tris Prior, uma jovem que descobre que é uma "divergente" e se envolve em uma luta contra um sistema corrupto.', 'Nesse livro distópico, a sociedade está dividida em cinco facções, cada uma representando uma virtude: Abnegação, Amizade, Audácia, Franqueza e Erudição. A protagonista, Tris Prior, descobre ser "divergente", ou seja, possui características de múltiplas facções. Ela se vê envolvida em uma luta contra um sistema corrupto, enfrentando desafios físicos e emocionais enquanto tenta encontrar seu lugar no mundo.', 'https://firebasestorage.googleapis.com/v0/b/bookshelf-8cf72.appspot.com/o/book_covers%2FDivergente.jpg?alt=media&token=e1cba22c-464a-4f7f-b26c-2947d5c87c0d');
 INSERT INTO books (title, author, year_publication, synopsis, description, cover_url) VALUES ('As Brumas de Avalon', 'Marion Zimmer Bradley', 1982, 'Uma reimaginação da lenda do Rei Arthur contada sob a perspectiva das mulheres envolvidas na história, como Morgana, Viviane e Guinevere.', 'Essa obra reconta a lenda do Rei Arthur através da perspectiva das mulheres envolvidas na história, como Morgana, Viviane, Guinevere e Igraine. O livro aborda questões de poder, religião, paganismo e os desafios enfrentados pelas mulheres em uma sociedade patriarcal. A narrativa mergulha na complexidade dos personagens e oferece uma visão única e envolvente dessa famosa lenda arturiana.', 'https://firebasestorage.googleapis.com/v0/b/bookshelf-8cf72.appspot.com/o/book_covers%2FAs%20Brumas%20de%20Avalon.jpg?alt=media&token=4dc5328a-22bb-4d39-9f5e-8a67c788f2c9');
 INSERT INTO books (title, author, year_publication, synopsis, description, cover_url) VALUES ('O Alquimista', 'Paulo Coelho', 1988, 'Um livro que mistura elementos de ficção, fantasia e espiritualidade, seguindo a jornada de Santiago, um jovem pastor em busca do seu tesouro pessoal e de seu próprio destino.', 'Neste livro, seguimos a jornada de Santiago, um jovem pastor espanhol que embarca em uma busca espiritual e pessoal em busca de seu tesouro. A história explora temas como destino, sonhos, sinais e a importância de seguir nossos corações. Com uma escrita poética e reflexiva, o livro convida o leitor a refletir sobre os propósitos da vida e a importância de buscar a realização pessoal.', 'https://firebasestorage.googleapis.com/v0/b/bookshelf-8cf72.appspot.com/o/book_covers%2FO%20Alquimista.jpg?alt=media&token=93f5d2cf-a4c6-4813-b078-b814f6f5aa21');
+
+--Inserting into 'book_genre' table
+INSERT INTO book_genre (book_id, genre_id) VALUES (1,3);
+INSERT INTO book_genre (book_id, genre_id) VALUES (1,4);
+INSERT INTO book_genre (book_id, genre_id) VALUES (2,3);
+INSERT INTO book_genre (book_id, genre_id) VALUES (2,4);
+INSERT INTO book_genre (book_id, genre_id) VALUES (2,5);
+INSERT INTO book_genre (book_id, genre_id) VALUES (3,3);
+INSERT INTO book_genre (book_id, genre_id) VALUES (3,4);
+INSERT INTO book_genre (book_id, genre_id) VALUES (4,3);
+INSERT INTO book_genre (book_id, genre_id) VALUES (4,9);
+INSERT INTO book_genre (book_id, genre_id) VALUES (4,6);
+INSERT INTO book_genre (book_id, genre_id) VALUES (5,3);
+INSERT INTO book_genre (book_id, genre_id) VALUES (5,7);
+INSERT INTO book_genre (book_id, genre_id) VALUES (5,4);
+INSERT INTO book_genre (book_id, genre_id) VALUES (6,3);
+INSERT INTO book_genre (book_id, genre_id) VALUES (6,4);
+INSERT INTO book_genre (book_id, genre_id) VALUES (7,2);
+INSERT INTO book_genre (book_id, genre_id) VALUES (7,3);
+INSERT INTO book_genre (book_id, genre_id) VALUES (7,8);
+INSERT INTO book_genre (book_id, genre_id) VALUES (8,11);
+INSERT INTO book_genre (book_id, genre_id) VALUES (8,4);
+INSERT INTO book_genre (book_id, genre_id) VALUES (8,9);
+INSERT INTO book_genre (book_id, genre_id) VALUES (9,3);
+INSERT INTO book_genre (book_id, genre_id) VALUES (9,2);
+INSERT INTO book_genre (book_id, genre_id) VALUES (10,1);
+INSERT INTO book_genre (book_id, genre_id) VALUES (10,10);
+
