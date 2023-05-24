@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.limaodev.myBookShelf.DTO.BookDTO;
+import com.limaodev.myBookShelf.DTO.BookBasicDTO;
 import com.limaodev.myBookShelf.services.BookService;
 
 @RestController
@@ -19,7 +19,7 @@ public class BookController {
 
     //Get books
     @GetMapping()
-    public List<BookDTO> getBooks(){
+    public List<BookBasicDTO> getBooks(){
         return bookService.findAll();
     }
 

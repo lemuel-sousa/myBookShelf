@@ -21,6 +21,7 @@ public class Book {
 
     private String title;
     private String author;
+    private String genre;
     @Column( name = "year_publication")
     private Integer year;
 
@@ -35,11 +36,12 @@ public class Book {
     public Book(){
     }
 
-    public Book(Long id, String title, String author, Integer year, String synopsis, String description,
+    public Book(Long id, String title, String author, String genre, Integer year, String synopsis, String description,
             String coverUrl) {
         this.id = id;
         this.title = title;
         this.author = author;
+        this.genre = genre;
         this.year = year;
         this.synopsis = synopsis;
         this.description = description;
