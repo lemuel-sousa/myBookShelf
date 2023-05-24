@@ -1,10 +1,15 @@
 package com.limaodev.myBookShelf.entities;
 
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
@@ -21,7 +26,6 @@ public class Book {
 
     private String title;
     private String author;
-    private String genre;
     @Column( name = "year_publication")
     private Integer year;
 
@@ -32,16 +36,24 @@ public class Book {
     private String description;
     private String coverUrl;
 
+    @ManyToMany
+    @JoinTable(
+        name = "book_genre",
+        joinColumns = @JoinColumn( name = "book_id"),
+        inverseJoinColumns = @JoinColumn( name = "genre_id")
+        
+    )
+    private List<Genre> genres;
+
 
     public Book(){
     }
 
-    public Book(Long id, String title, String author, String genre, Integer year, String synopsis, String description,
+    public Book(Long id, String title, String author, Integer year, String synopsis, String description,
             String coverUrl) {
         this.id = id;
         this.title = title;
         this.author = author;
-        this.genre = genre;
         this.year = year;
         this.synopsis = synopsis;
         this.description = description;
