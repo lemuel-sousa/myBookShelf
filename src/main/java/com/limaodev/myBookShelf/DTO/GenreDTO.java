@@ -3,6 +3,7 @@ package com.limaodev.myBookShelf.DTO;
 import org.springframework.beans.BeanUtils;
 
 import com.limaodev.myBookShelf.entities.Genre;
+import com.limaodev.myBookShelf.projections.GenreProjection;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -14,9 +15,14 @@ public class GenreDTO {
     private Long id;
     private String name;
 
-    public GenreDTO(){}
+    public GenreDTO() {
+    }
 
     public GenreDTO(Genre entity) {
+        BeanUtils.copyProperties(entity, this);
+    }
+
+    public GenreDTO(GenreProjection entity) {
         BeanUtils.copyProperties(entity, this);
     }
 
@@ -45,5 +51,4 @@ public class GenreDTO {
         return true;
     }
 
-    
 }

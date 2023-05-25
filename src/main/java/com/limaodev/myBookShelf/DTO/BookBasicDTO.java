@@ -1,6 +1,10 @@
 package com.limaodev.myBookShelf.DTO;
 
+import java.util.List;
+
 import com.limaodev.myBookShelf.entities.Book;
+import com.limaodev.myBookShelf.entities.Genre;
+import com.limaodev.myBookShelf.projections.BookBasicProjection;
 
 import lombok.Getter;
 
@@ -13,6 +17,7 @@ public class BookBasicDTO {
     private Integer year;
     private String synopsis;
     private String coverUrl;
+    private List<Genre> genres;
 
     public BookBasicDTO(){}
 
@@ -21,6 +26,16 @@ public class BookBasicDTO {
         title = entity.getTitle();
         author = entity.getAuthor();
         year = entity.getYear();
+        synopsis = entity.getSynopsis();
+        coverUrl = entity.getCoverUrl();
+        genres = entity.getGenres();
+    }
+
+    public BookBasicDTO(BookBasicProjection entity) {
+        id = entity.getBId();
+        title = entity.getTitle();
+        author = entity.getAuthor();
+        year = entity.getYearPub();
         synopsis = entity.getSynopsis();
         coverUrl = entity.getCoverUrl();
     }

@@ -4,6 +4,7 @@ import java.util.List;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -26,7 +27,7 @@ public class Book {
 
     private String title;
     private String author;
-    @Column( name = "year_publication")
+    @Column( name = "year_pub")
     private Integer year;
 
     @Column(columnDefinition = "TEXT")
@@ -36,7 +37,7 @@ public class Book {
     private String description;
     private String coverUrl;
 
-    @ManyToMany
+    @ManyToMany( fetch = FetchType.EAGER)
     @JoinTable(
         name = "book_genre",
         joinColumns = @JoinColumn( name = "book_id"),

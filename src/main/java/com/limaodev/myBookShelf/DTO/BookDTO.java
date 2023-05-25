@@ -1,8 +1,11 @@
 package com.limaodev.myBookShelf.DTO;
 
+import java.util.List;
+
 import org.springframework.beans.BeanUtils;
 
 import com.limaodev.myBookShelf.entities.Book;
+import com.limaodev.myBookShelf.entities.Genre;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -16,8 +19,8 @@ public class BookDTO {
     private String author;
     private Integer year;
     private String synopsis;
-    private String description;
     private String coverUrl;
+    private List<Genre> genres;
 
     public BookDTO(){
     }
