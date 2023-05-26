@@ -1,5 +1,7 @@
 package com.limaodev.myBookShelf.projections;
 
+import java.util.List;
+
 public interface BookBasicProjection {
     
     Long getBId();
@@ -8,4 +10,5 @@ public interface BookBasicProjection {
     Integer getYearPub();
     String getSynopsis();
     String getCoverUrl();
+    List<GenreProjection> getGenres();
 }

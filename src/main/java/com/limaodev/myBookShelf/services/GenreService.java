@@ -31,7 +31,7 @@ public class GenreService {
     @Transactional( readOnly = true) 
     public List<GenreDTO> findGenresByBook(Long bookId){
         List<GenreProjection> genres = genreRepository.findByBook(bookId);
-
+        
         return genres.stream().map( e -> new GenreDTO(e)).toList();
     }
 

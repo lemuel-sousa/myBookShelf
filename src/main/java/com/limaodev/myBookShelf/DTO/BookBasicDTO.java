@@ -31,13 +31,14 @@ public class BookBasicDTO {
         genres = entity.getGenres();
     }
 
-    public BookBasicDTO(BookBasicProjection entity) {
-        id = entity.getBId();
-        title = entity.getTitle();
-        author = entity.getAuthor();
-        year = entity.getYearPub();
-        synopsis = entity.getSynopsis();
-        coverUrl = entity.getCoverUrl();
+    public BookBasicDTO(BookBasicProjection book) {
+        id = book.getBId();
+        title = book.getTitle();
+        author = book.getAuthor();
+        year = book.getYearPub();
+        synopsis = book.getSynopsis();
+        coverUrl = book.getCoverUrl();
+        genres = getGenres();
     }
 
 }
